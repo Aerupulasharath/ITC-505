@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Libs Game</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+  <h1 class="main-title">Let's have fun with Mad Libs!</h1>
+  <main>
+    <div class="selections-container">
+      <label class="dropdown-text" for="people-dropdown">Choose a name:</label>
+      <select class="dropdown" name="people" id="people-dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="Susie">Susie</option>
+        <option value="Zac">Zac</option>
+        <option value="Amar">Amar</option>
+        <option value="Naya">Naya</option>
+        <option value="Ada">Ada</option>
+      </select>
+      <label class="dropdown-text" for="verbs-dropdown">Choose a verb:</label>
+      <select class="dropdown" name="verbs" id="verbs-dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="playing">playing</option>
+        <option value="listening">listening</option>
+        <option value="walking">walking</option>
+        <option value="running">running</option>
+        <option value="laughing">laughing</option>
+      </select>
+      <label class="dropdown-text" for="location-dropdown">Choose a location:</label>
+      <select class="dropdown" name="location" id="location-dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="Italy">Italy</option>
+        <option value="NYC">New York City</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Paris">Paris</option>
+      </select>
+      <label class="dropdown-text" for="food-dropdown">Choose a food item:</label>
+      <select class="dropdown" name="food" id="food-dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="dumplings">Dumplings</option>
+        <option value="garlic">Garlic</option>
+        <option value="cake">Cake</option>
+        <option value="falafels">Falafels</option>
+        <option value="zucchini">Zucchini</option>
+      </select>
+    </div>
+    <button class="btn" id="generate-madlib-btn">Generate Mad Lib</button>
+    <p id="madlib-text"></p>
+  </main>
+  <script src="server.js"></script>
+
+  <h2>Addendum</h2>
+  <ol>
+    <li><strong>Accessibility Considerations:</strong> Ensure all interactive elements are accessible to users with disabilities by providing alternative text for images, using semantic HTML elements, and implementing keyboard navigation.</li>
+    <li><strong>Error Handling:</strong> Implement error handling for unexpected scenarios to provide meaningful error messages and guide users towards resolving issues.</li>
+    <li><strong>Localization and Internationalization:</strong> Consider internationalization by allowing the application to support multiple languages and cultural preferences.</li>
+    <li><strong>Browser Compatibility:</strong> Test the application across different browsers to ensure consistent functionality and appearance.</li>
+    <li><strong>Security Measures:</strong> Sanitize user inputs to prevent injection attacks and implement security measures to protect user data.</li>
+    <li><strong>Performance Optimization:</strong> Optimize code and assets to reduce load times and improve overall performance, enhancing user experience.</li>
+    <li><strong>User Experience Enhancements:</strong> Continuously gather user feedback to identify areas for improvement and implement enhancements to enhance the overall user experience.</li>
+    <li><strong>Documentation and Maintenance:</strong> Document the codebase, including setup instructions, configuration details, and code comments, to facilitate maintenance and collaboration among developers.</li>
+    <li><strong>Testing and Quality Assurance:</strong> Conduct thorough testing, including unit tests, integration tests, and end-to-end tests, to ensure the reliability and quality of the application.</li>
+    <li><strong>Scalability and Flexibility:</strong> Design the application with scalability in mind to accommodate future growth and changes in requirements.</li>
+    <li><strong>Legal and Compliance Requirements:</strong> Ensure compliance with relevant laws, regulations, and industry standards, such as data protection regulations and accessibility guidelines.</li>
+    <li><strong>Feedback Mechanisms:</strong> Implement mechanisms for users to provide feedback, such as surveys, contact forms, and rating systems, to gather insights and improve the application.</li> <br>
+  </ol>
+</section>
+</body>
+</html>
+<footer>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+</footer>
+
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
+</div>
+</body>
+</html>
